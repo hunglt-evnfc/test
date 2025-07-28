@@ -1,0 +1,16 @@
+{
+  "name": "node-container-project",
+  "version": "1.0.0",
+  "description": "A simple Node.js application containerized with Docker",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "docker:build": "docker build -t node-container-project .",
+    "docker:run": "docker run -p 3000:3000 node-container-project"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
